@@ -55,8 +55,30 @@ dmesg | tail -n 10
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](/praktikum/week2-syscall-structures/screenshots/Diagram%20Alur%20System%20Call.png)
+![Screenshot hasil](/praktikum/week2-syscall-structures/screenshots/Cuplikan%20layar%202025-10-21%20052110.png)
+
+
+| No. | System Call | Argumen (Contoh) | Fungsi dalam Eksekusi ls |
+| :---: | :---: | :--- | :--- |
+| 1 | **execve** | "/usr/bin/ls", ["ls"] | Memuat dan **mengeksekusi** program ls. Ini adalah titik awal proses. |
+| 2 | **brk** | NULL | Menginisialisasi atau menyesuaikan **batas atas data segment** (*heap*) program. |
+| 3 | **mmap** | NULL, 8192 | **Mengalokasikan memori virtual** baru, biasanya untuk kebutuhan *runtime linker*. |
+| 4 | **access** | "/etc/ld.so.preload", R_OK | **Memeriksa izin akses** ke file *shared library* yang harus dimuat terlebih dahulu (*preload*). |
+| 5 | **openat** | "/etc/ld.so.cache", O_RDONLY O_CLOEXEC | **Membuka cache pustaka dinamis** sistem untuk mengetahui lokasi semua *shared libraries* yang dibutuhkan. |.
+
+![Screenshot hasil](/praktikum/week2-syscall-structures/screenshots/Cuplikan%20layar%202025-10-21%20052243.png)
+
+
+
+| Fitur | Log Kernel (dmesg) | Output Program Biasa (ls, cat, dll.) |
+| :---: | :---: | :--- |
+| **Sumber Data** | Kernel Message Buffer (Log yang dibuat oleh inti Sistem Operasi). | Standard Output (stdout) atau Standard Error (stderr) (Output yang dibuat oleh program pengguna/aplikasi). |
+| **Konten** | Pesan tentang *hardware*, *driver*, pemuatan *module*, *disk mounting* (EXT4-fs), dan jaringan tingkat rendah (veth, cni0). | Data hasil pengolahan, daftar file, status operasi, atau pesan *error* spesifik aplikasi. |
+| **Format Waktu** | Diawali dengan timestamp relatif ([ 2997.288119]) yang menunjukkan detik sejak sistem di-*boot*. | Tidak memiliki *timestamp* relatif bawaan, kecuali jika program secara eksplisit mencetaknya. |
+| **Tingkat Akses** | Membutuhkan izin khusus (sudo) untuk dibaca karena berisi informasi sensitif sistem. | Umumnya dapat diakses oleh **pengguna biasa**. |
 
 ---
+
 
 ## Analisis
 - Jelaskan makna hasil percobaan.
