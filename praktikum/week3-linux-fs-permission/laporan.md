@@ -1,54 +1,55 @@
 
-# Laporan Praktikum Minggu [3]
-Topik: ["Linux File System & Permission"]
+# Laporan Praktikum Minggu 3
+Topik: Linux File System & Permission
 
 ---
 
 ## Identitas
-- **Nama**  : [Safrudin]  
-- **NIM**   : [250202966]  
-- **Kelas** : [1IKRB]
+- **Nama**  : Safrudin 
+- **NIM**   : 250202966 
+- **Kelas** : 1IKRB
 
 ---
 
 ## Tujuan 
-> Mahasiswa mampu menggunakan perintah ls, pwd, cd, cat untuk navigasi file dan direktori.
-> Mahasiswa mampu menggunakan chmod dan chown untuk manajemen hak akses file.
-> Mahasiswa mampu menjelaskan hasil output dari perintah Linux dasar.
+- Mahasiswa mampu menggunakan perintah ls, pwd, cd, cat untuk navigasi file dan direktori.
+- Mahasiswa mampu menggunakan chmod dan chown untuk manajemen hak akses file.
+- Mahasiswa mampu menjelaskan hasil output dari perintah Linux dasar.
 
 ---
 
 ## Dasar Teori
 
 Eksperimen ini didasarkan pada tiga konsep inti sistem operasi mirip Unix: Manajemen Sistem File, Struktur Akun Pengguna, dan Pengendalian Akses. Manajemen Sistem File berfokus pada hierarki direktori tunggal yang berakar di /, di mana setiap sesi terminal beroperasi dalam Direktori Aktif (pwd, cd). Perintah ls -l mengekspos metadata file, termasuk hak akses. Teori Struktur Akun Pengguna diwakili oleh file /etc/passwd, yang berfungsi sebagai database akun dan mengidentifikasi setiap entitas dengan UID (User ID) dan GID (Group ID) numerik; akun sistem penting ditandai dengan shell non-login (/sbin/nologin) untuk alasan keamanan. Terakhir, Pengendalian Akses adalah fondasi manipulasi file, membagi hak akses (Baca, Tulis, Eksekusi) ke dalam tiga kategori: Pemilik (User), Group, dan Lainnya (Others). Perintah chmod (Change Mode) menerapkan batasan ini, misalnya 600 secara drastis membatasi akses hanya untuk Pemilik, sementara chown (Change Ownership) mengubah identitas pemilik file, mentransfer hak istimewa penuh ke akun baru, seperti root.
+
 ---
 
 ## Langkah Praktikum
 1. Langkah-langkah yang dilakukan.
-   > membuka cloud shell,
-   > memasukan perintah sesuai contoh,
-   > menganalisis hasilnya
+   - membuka cloud shell,
+   - memasukan perintah sesuai contoh,
+   - menganalisis hasilnya
 
 2. Perintah yang dijalankan.
      pwd
-> ls -l
-> cd /tmp
-> ls -a
-> cat /etc/passwd | head -n 5
-> echo "Hello <NAME><NIM>" > percobaan.txt
-> ls -l percobaan.txt
-> chmod 600 percobaan.txt
-> ls -l percobaan.txt
-> sudo chown root percobaan.txt
-> ls -l percobaan.txt
+- ls -l
+- cd /tmp
+- ls -a
+- cat /etc/passwd | head -n 5
+- echo "Hello <NAME><NIM>" > percobaan.txt
+- ls -l percobaan.txt
+- chmod 600 percobaan.txt
+- ls -l percobaan.txt
+- sudo chown root percobaan.txt
+- ls -l percobaan.txt
 
 3. File dan kode yang dibuat.
-> percobaan.txt, file ini dibuat dengan perintah echo "Hello <NAME><NIM>" > percobaan.txt.
+- percobaan.txt, file ini dibuat dengan perintah echo "Hello <NAME><NIM>" > percobaan.txt.
 
 4. Commit message yang digunakan.
-> git add .
-> git commit -m "Minggu 3 - Linux  File System & Permission"
-> git push origin main
+- git add .
+- git commit -m "Minggu 3 - Linux  File System & Permission"
+- git push origin main
 ---
 
 ## Kode / Perintah
@@ -173,20 +174,25 @@ Kesimpulan dari serangkaian percobaan kode tersebut adalah bahwa sistem operasi 
 ---
 
 ## Quiz
-1. [Apa fungsi dari perintah chmod?]  
-   **Jawaban:**  
-2. [Apa arti dari kode permission rwxr-xr--?]  
-   **Jawaban:**  
-3. [Jelaskan perbedaan antara chown dan chmod.]  
-   **Jawaban:**  
+1. Apa fungsi dari perintah chmod?  
+   **Jawaban: Fungsi dari perintah chmod adalah untuk mengubah hak akses pada sebuah file atau direktori.**  
+2. Apa arti dari kode permission rwxr-xr--?  
+   **Jawaban:**
+   - **rwx, memiliki izin baca, tulis, dan eksekusi.**
+   - **r-x, hanya memiliki izin baca dan eksekusi, tetapi tidak memiliki izin tulis.**
+   - **r--, hanya memiliki izin baca, tidak memiliki izin tulis dan eksekusi.**
+3. Jelaskan perbedaan antara chown dan chmod.  
+   **Jawaban: Chmod berfungsi untuk mengubah hak akses pada file atau direktori, sedangkan chown berfungsi untuk mengubah kepemilikan dari sebuah file atau direktori.**  
 
 ---
 
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini? 
 
+   Membuat tabel pada vscode 
+- Bagaimana cara Anda mengatasinya?  
+Mempelajari caranya dengan ai.
 ---
 
 **Credit:**  
