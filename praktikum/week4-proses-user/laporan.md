@@ -22,6 +22,7 @@ Tuliskan tujuan praktikum minggu ini.
 
 ## Dasar Teori
 Semua perintah (seperti ps aux, pstree, dan kill) didasarkan pada konsep manajemen proses, di mana setiap program yang dieksekusi disebut proses dan diberi Process ID (PID) unik oleh kernel (contohnya PID 3309 untuk sleep 1000). Proses-proses ini diatur dalam hierarki induk-anak (terlihat pada output pstree), yang memastikan bahwa semua program, seperti dockerd atau python, berasal dari satu proses induk utama, yaitu bash(1) di lingkungan Cloud Shell Anda. Kernel bertanggung jawab penuh atas penjadwalan proses, mengukur beban kerja (Load Average), dan mengelola statusnya (seperti Sleeping atau Running). Kedua, percobaan whoami, id, dan groups didasarkan pada Manajemen Pengguna dan Izin Akses, yang menetapkan bahwa setiap proses berjalan di bawah identitas pemiliknya (safrudindidin03). Prinsip ini menentukan siapa yang berhak mengontrol (misalnya, mengakhiri dengan kill) dan mengakses sumber daya sistem.
+
 ---
 
 ## Langkah Praktikum
