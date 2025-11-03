@@ -80,46 +80,37 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 ![Screenshot hasil](/praktikum/week4-proses-user/screenshots/Cuplikan%20layar%202025-10-26%20034834.png)
 
-## Struktur Pohon Proses Utama
+* **bash(1)** * --**dockerd(207)**
+        * --**containerd(234)**
+            * --{containerd}(252)
+            * --{containerd}(253)
+            * --{containerd}(254)
+            * --{containerd}(256)
+            * --{containerd}(280)
+            * --{containerd}(281)
+            * --{containerd}(287)
+            * --{containerd}(1971)
+        * --{dockerd}(213)
+        * --{dockerd}(214)
+        * --{dockerd}(215)
+        * --{dockerd}(216)
+        * --{dockerd}(231)
+        * --{dockerd}(237)
+        * --{dockerd}(322)
+        * --{dockerd}(323)
+        * --{dockerd}(325)
+        * --{dockerd}(327)
+    * --**logger(26)**
+    * --**python(25)** * --editor-proxy(246)
+        * --runuser(269) 
+            * --sh(271) 
+                * --node(286) 
+                    * --node(287) 
+                        * --gcloudcode_cli(3292)
+                            * --{gcloudcode_cli}(+)
+                            * --{gcloudcode_cli}(+)
+                            * --{gcloudcode_cli}(+)
 
-* **bash(1)** *(Proses Induk Utama/Pseudo-init di Cloud Shell)*
-
-    * **dockerd(207)**
-      *(Daemon Docker, bertugas mengelola kontainer)*
-      
-        * **containerd(234)** *(Runtime kontainer)*
-        * {dockerd}(PID) 
-          *(Berbagai thread pendukung untuk dockerd)*
-        * (Proses Anak dockerd lainnya...)
-
-    * **logger(26)**
-      *(Proses untuk mencatat log sistem)*
-
-    * **python(25)**
-      *(Bagian dari infrastruktur Cloud Shell)*
-      
-        * **editor-proxy(PID)**
-          *(Layanan proxy untuk editor)*
-        * **node(PID)**
-          *(Layanan yang sering digunakan untuk backend/layanan shell)*
-          
-            * (Proses Anak node lainnya...)
-
-    * **(Proses terminal aktif, jika ada)**
-      *(Contoh: proses shell tempat Anda menjalankan pstree)*
-
----
-
-## 🔑 Identifikasi Induk dan Anak
-
-Dalam hierarki ini:
-1.  **Induk Tertinggi:** `bash(1)`
-2.  **Anak (Child):** Proses yang berinduk langsung ke proses lain.
-    * Contoh: `dockerd(207)` adalah anak dari `bash(1)`.
-3.  **Cucu (Grandchild):** Proses yang berinduk ke proses anak.
-    * Contoh: `containerd(234)` adalah cucu dari `bash(1)`.
-
-Setiap proses di dalam kurung, seperti `(1)`, `(207)`, dan `(234)`, adalah **PID** unik proses tersebut.
 ---
 ## Analisis
 - Jelaskan makna hasil percobaan.  
