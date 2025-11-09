@@ -1,13 +1,13 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu 5
+Topik: Penjadwalan CPU – FCFS dan SJF
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : Safrudin 
+- **NIM**   : 250202966
+- **Kelas** : 1IKRB
 
 ---
 
@@ -60,11 +60,11 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
+1. Apa perbedaan utama antara FCFS dan SJF?
    **Jawaban:**  
-2. [Pertanyaan 2]  
+2. Mengapa SJF dapat menghasilkan rata-rata waktu tunggu minimum?
    **Jawaban:**  
-3. [Pertanyaan 3]  
+3. Apa kelemahan SJF jika diterapkan pada sistem interaktif?
    **Jawaban:**  
 
 ---
