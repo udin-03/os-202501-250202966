@@ -59,14 +59,15 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 ![Screenshot hasil](/praktikum/week5-scheduling-fcfs-sjf/screenshots/Cuplikan%20layar%202025-11-09%20172330.png)
 
-| P1 | P2 | P3 | P4 |
-0    6    14   21   24
+     | P1 | P2 | P3 | P4 |
+     0    6    14   21   24
 
 ![Screenshot hasil](/praktikum/week5-scheduling-fcfs-sjf/screenshots/Cuplikan%20layar%202025-11-09%20172345.png)
 ![Screenshot hasil](/praktikum/week5-scheduling-fcfs-sjf/screenshots/Cuplikan%20layar%202025-11-09%20172645.png)
 
-| P1 | P4 | P3 | P2 |
-0    6    9   16   24
+
+     | P1 | P4 | P3 | P2 |
+     0    6    9   16   24
 
 ## Perbandingan Algoritma Penjadwalan FCFS dan SJF
 
