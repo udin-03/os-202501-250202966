@@ -78,7 +78,7 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 - Time Quantum dalam Round Robin adalah parameter dalam proses untuk mengatur kinerja CPU.
 - Priority Scheduling berfungsi sebagai mekanisme untuk menjalankan proses sesuai urutan paling penting (priority) terlebih dahulu.
-- 
+
 ---
 
 ## Analisis
