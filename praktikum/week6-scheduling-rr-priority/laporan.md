@@ -58,14 +58,17 @@ TAT[i] = WT[i] + Burst[i]
 Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](/praktikum/week6-scheduling-rr-priority/screenshots/Cuplikan%20layar%202025-11-16%20150852.png)
 
-  | P1 | P2 | P3 | P4 | P1 | P3 |  P4 | P3 |
+   ```
+     | P1 | P2 | P3 | P4 | P1 | P3 | P4 | P3 |
      0    3    6    9   12   15   17   20   22
+   ```
 
 ![Screenshot hasil](/praktikum/week6-scheduling-rr-priority/screenshots/Cuplikan%20layar%202025-11-16%20151644.png)
 
- | P1 | P2 | P3 | P4 | 
-     0    5    8    14   22
-
+   ```
+     | P1 | P2 | P3 | P4 |
+     0    5    8    14   22 
+   ```
 
      | Algoritma | Avg Waiting Time | Avg Turnaround Time | Kelebihan | Kekurangan |
      |------------|------------------|----------------------|------------|-------------|
