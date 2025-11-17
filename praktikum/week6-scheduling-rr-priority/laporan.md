@@ -70,10 +70,11 @@ Sertakan screenshot hasil percobaan atau diagram:
      0    5    8    14   22 
    ```
 
-     | Algoritma | Avg Waiting Time | Avg Turnaround Time | Kelebihan | Kekurangan |
-     |------------|------------------|----------------------|------------|-------------|
-     | RR | 9,375 | 13,625 | Adil terhadap semua proses | Tidak efisien jika quantum tidak tepat |
-     | Priority | 5,25 | 10,75 | Efisien untuk proses penting | Potensi *starvation* pada prioritas rendah |
+
+| Algoritma | Avg Waiting Time | Avg Turnaround Time | Kelebihan | Kekurangan |
+| :--- | :--- | :--- | :--- | :--- |
+| RR | 9,375 | 13,625 | Adil terhadap semua proses | Tidak efisien jika quantum tidak tepat |
+| Priority | 5,25 | 10,75 | Efisien untuk proses penting | Potensi *starvation* pada prioritas rendah |
 
 - Time Quantum dalam Round Robin adalah parameter dalam proses untuk mengatur kinerja CPU.
 - Priority Scheduling berfungsi sebagai mekanisme untuk menjalankan proses sesuai urutan paling penting (priority) terlebih dahulu.
