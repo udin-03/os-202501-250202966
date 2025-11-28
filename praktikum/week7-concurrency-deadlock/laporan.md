@@ -9,7 +9,7 @@ Topik:  Sinkronisasi Proses dan Masalah Deadlock
 | Nama | NIM |
 | :--- | :--- |
 | Ahmad Wildan Asrovi  | 250202927 |
-| F | 2502029 |
+| April Triadi | 250202930 |
 | Safrudin | 250202966 |
 
 ---
