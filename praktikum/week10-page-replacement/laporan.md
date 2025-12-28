@@ -127,6 +127,7 @@ for i, page in enumerate(pages):
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
+
 ![Screenshot hasil](/os-202501-250202966/praktikum/week10-page-replacement/screenshots/FIFO.png)
 
 ![Screenshot hasil](/os-202501-250202966/praktikum/week10-page-replacement/screenshots/LRU.png)
