@@ -114,7 +114,7 @@ Sertakan screenshot hasil percobaan atau diagram:
    |:--:|:--:|:--:| :--: |
    | P1 | R1 | R2 | Terjadi deadlock. Karena, P1 memegang R1 dan meminta R2 yang sedang dipegang P2. |
    | P2 | R2 | R3 | Terjadi deadlock. Karena, P2 memegang R2 dan meminta R3 yang sedang dipegang P3. |
-   | P3 | R3 | R1 | Terjadi deadlock. Karena, P3 memegang R3 dan meminta R1 (yang sedang dipegang P1). |
+   | P3 | R3 | R1 | Terjadi deadlock. Karena, P3 memegang R3 dan meminta R1 yang sedang dipegang P1. |
 
 Deadlock terjadi karena ketiga proses ini (P1, P2, P3) akan selamanya saling tunggu dan resource yang mereka butuhkan tidak pernah dilepaskan oleh pemegangnya.
 
@@ -134,14 +134,16 @@ Kaitannya dengan empat kondisi Deadlock:
 
 ## Quiz
 1. Apa perbedaan antara deadlock prevention, avoidance, dan detection?  
-   **Jawaban:- Deadlock prevention, strategi ini bekerja dengan memastikan sebelum proses berjalan salah satu dari kondisi yang menyebabkan Deadlock (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait) tidak terjadi.**
-   **- Deadlock avoidance, strategi ini bekerja pada saat proses berjalan dengan cara memprediksi apa yang akan terjadi jika memberikan resource kepada proses. Prediksi ini didasarkan pada informasi awal proses yang akan berjalan.**
-   **- Deadlock detection, strategi ini bekerja dengan cara membiarkan semua proses berjalan. Lalu jika terjadi Deadlock, strategi ini akan bekerja untuk menghentikan proses dan memperbaikinya agar proses bisa berjalan lagi.**  
+   **Jawaban:**
+   - **Deadlock prevention, strategi ini bekerja dengan memastikan sebelum proses berjalan salah satu dari kondisi yang menyebabkan Deadlock (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait) tidak terjadi.**
+   - **Deadlock avoidance, strategi ini bekerja pada saat proses berjalan dengan cara memprediksi apa yang akan terjadi jika memberikan resource kepada proses. Prediksi ini didasarkan pada informasi awal proses yang akan berjalan.**
+   - **Deadlock detection, strategi ini bekerja dengan cara membiarkan semua proses berjalan. Lalu jika terjadi Deadlock, strategi ini akan bekerja untuk menghentikan proses dan memperbaikinya agar proses bisa berjalan lagi.**  
 2. Mengapa deteksi deadlock tetap diperlukan dalam sistem operasi?
    **Jawaban:Deteksi deadlock tetap diperlukan karena, deteksi memungkinkan resource digunakan secara maksimal tanpa batasan di awal, dan algoritma pemantauannya hanya dijalankan secara berkala sehingga tidak membebani performa CPU secara terus-menerus. Ketika deadlock ditemukan melalui deteksi ini, sistem operasi dapat mengambil tindakan pemulihan yang tepat, seperti melakukan terminasi pada salah satu proses atau melakukan pengambilan paksa resource (preemption) untuk memutus rantai lingkaran setan tersebut dan mengembalikan sistem ke kondisi normal.**  
 3. Apa kelebihan dan kekurangan pendekatan deteksi deadlock? 
-   **Jawaban:- Kelebihannya adalah tidak menghambat jalannya proses dan resource digunakan secara maksimal.**  
-   **- Kekurangannya adalah ada biaya performa untuk menjalankan algoritma deteksi dan risiko kehilangan data saat proses dihentikan paksa untuk pemulihan.**
+   **Jawaban:**
+   - **Kelebihannya adalah tidak menghambat jalannya proses dan resource digunakan secara maksimal.**  
+   - **Kekurangannya adalah ada biaya performa untuk menjalankan algoritma deteksi dan risiko kehilangan data saat proses dihentikan paksa untuk pemulihan.**
 
 ---
 
