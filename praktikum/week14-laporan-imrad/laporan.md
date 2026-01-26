@@ -81,7 +81,8 @@ Sebagai solusi untuk mengoptimalkan kinerja sistem, algoritma Shortest Job First
 ## C. Hasil (Results)
 ### 1. Tabel Hasil Uji
 1. FCFS (First Come First Served)
-![Screenshot hasil](/praktikum/week14-laporan-imrad/screenshots/FCFS.png) 
+![Screenshot hasil](/praktikum/week14-laporan-imrad/screenshots/FCFS.png)
+ 
  | Proses | AT | BT | FT | TAT | WT |
    |:--:|:--:|:--:|:--:|:--:|:--:|
    | P1 | 0 | 7 | 7 | 7 | 0 |
