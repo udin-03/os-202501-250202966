@@ -82,16 +82,16 @@ Sebagai solusi untuk mengoptimalkan kinerja sistem, algoritma Shortest Job First
 ### 1. Tabel Hasil Uji
 1. FCFS (First Come First Served)
 ![Screenshot hasil](/praktikum/week14-laporan-imrad/screenshots/FCFS.png)
- 
- | Proses | AT | BT | FT | TAT | WT |
+| Proses | AT | BT | FT | TAT | WT |
    |:--:|:--:|:--:|:--:|:--:|:--:|
    | P1 | 0 | 7 | 7 | 7 | 0 |
    | P2 | 1 | 9 | 16 | 15 | 6 |
    | P3 | 2 | 4 | 20 | 18 | 14 |
    | P4 | 3 | 3 | 23 | 20 | 17 |
    | P5 | 4 | 5 | 28 | 24 | 19 |
-Rata-rata Turnaround Time (TAT): 16.80
-Rata-rata Waiting Time (WT)   : 11.20
+
+- Rata-rata Turnaround Time (TAT): 16.80
+- Rata-rata Waiting Time (WT)   : 11.20
 
 2. SJF (Shortest Job First)
 ![Screenshot hasil](/praktikum/week14-laporan-imrad/screenshots/SJF.png) 
@@ -102,8 +102,9 @@ Rata-rata Waiting Time (WT)   : 11.20
    | P3 | 2 | 4 | 14 | 12 | 8 |
    | P4 | 3 | 3 | 10 | 7 | 4 |
    | P5 | 4 | 5 | 19 | 15 | 10 |
-Rata-rata Turnaround Time (TAT): 13.60
-Rata-rata Waiting Time (WT)   : 8.00
+
+- Rata-rata Turnaround Time (TAT): 13.60
+- Rata-rata Waiting Time (WT)   : 8.00
 
 ### 2. Ringkasan Temuan
 - Reduksi Waktu Tunggu: Penggunaan algoritma SJF berhasil memangkas rata-rata waktu tunggu sebesar 28.5% dibandingkan dengan FCFS. Hal ini membuktikan bahwa mendahulukan proses dengan burst time pendek sangat efektif mengurangi antrean.
